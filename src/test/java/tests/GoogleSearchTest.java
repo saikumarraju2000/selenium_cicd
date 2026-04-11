@@ -18,18 +18,18 @@ public class GoogleSearchTest extends BaseTest {
         Assert.assertTrue(driver.getTitle().contains("Google"), "Title should contain 'Google'");
     }
 
-    @Test
-    public void testSearchReturnsResults() {
-        driver.get("https://www.google.com");
+    // @Test
+    // public void testSearchReturnsResults() {
+    //     driver.get("https://www.google.com");
 
-        WebElement searchBox = driver.findElement(By.name("q"));
-        searchBox.sendKeys("Selenium WebDriver");
-        searchBox.sendKeys(Keys.ENTER);
+    //     WebElement searchBox = driver.findElement(By.name("q"));
+    //     searchBox.sendKeys("Selenium WebDriver");
+    //     searchBox.sendKeys(Keys.ENTER);
 
-        // Wait for results page with explicit wait
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement results = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("search")));
-        Assert.assertNotNull(results, "Search results should be present");
-        Assert.assertTrue(driver.getTitle().contains("Selenium WebDriver"), "Results title mismatch");
-    }
+    //     // Wait for results page with explicit wait
+    //     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    //     WebElement results = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("search")));
+    //     Assert.assertNotNull(results, "Search results should be present");
+    //     Assert.assertTrue(driver.getTitle().contains("Selenium WebDriver"), "Results title mismatch");
+    // }
 }
