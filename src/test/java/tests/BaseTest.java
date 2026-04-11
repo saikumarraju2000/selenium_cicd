@@ -19,7 +19,9 @@ public class BaseTest {
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
-        // options.addArguments("--headless");   // uncomment to run headless
+        options.addArguments("--headless");             // Run headless for CI/CD
+        options.addArguments("--no-sandbox");           // Disable sandbox
+        options.addArguments("--disable-dev-shm-usage"); // Overcome limited resource problems
         options.addArguments("--start-maximized");
         options.addArguments("--disable-notifications");
 
