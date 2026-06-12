@@ -77,6 +77,8 @@ public class BrowserFactory {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
         options.addArguments("disable-blink-features=AutomationControlled");
+        options.addArguments("headless");  
+        options.addArguments("disable-gpu");
         options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         options.setExperimentalOption("useAutomationExtension", false);
         
