@@ -1,7 +1,7 @@
 package tests;
 
+import base.BaseTest;
 import pages.GooglePage;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
@@ -16,8 +16,5 @@ public class GooglePageObjectTest extends BaseTest {
 
         google.open();
         google.search("TestNG tutorial");
-
-        // Assert.assertTrue(google.getTitle().contains("TestNG tutorial"), "Page title mismatch");
-        // Assert.assertTrue(google.hasResults(), "No results found");
     }
 }

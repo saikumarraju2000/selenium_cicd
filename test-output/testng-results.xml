@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-11T11:46:20 IST" name="Default suite" finished-at="2026-04-11T11:46:30 IST" duration-ms="10249">
+  <suite started-at="2026-06-12T23:25:10 IST" name="Default suite" finished-at="2026-06-12T23:25:18 IST" duration-ms="8204">
     <groups>
     </groups>
-    <test started-at="2026-04-11T11:46:20 IST" name="Default test" finished-at="2026-04-11T11:46:30 IST" duration-ms="10249">
+    <test started-at="2026-06-12T23:25:10 IST" name="Default test" finished-at="2026-06-12T23:25:18 IST" duration-ms="8204">
       <class name="tests.GoogleSearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.GoogleSearchTest@639c2c1d]" started-at="2026-04-11T11:46:20 IST" name="setUp" finished-at="2026-04-11T11:46:23 IST" duration-ms="3331" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.GoogleSearchTest@65fb9ffc]" started-at="2026-06-12T23:25:10 IST" name="setUp" finished-at="2026-06-12T23:25:12 IST" duration-ms="2178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSearchReturnsResults()[pri:0, instance:tests.GoogleSearchTest@639c2c1d]" started-at="2026-04-11T11:46:23 IST" name="testSearchReturnsResults" finished-at="2026-04-11T11:46:30 IST" duration-ms="6593" status="PASS">
+        <test-method signature="testBackNavigationAfterSearch()[pri:15, instance:tests.GoogleSearchTest@65fb9ffc]" started-at="2026-06-12T23:25:12 IST" name="testBackNavigationAfterSearch" description="Verify browser back button works after search" finished-at="2026-06-12T23:25:18 IST" duration-ms="5576" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchReturnsResults -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GoogleSearchTest@639c2c1d]" started-at="2026-04-11T11:46:30 IST" name="tearDown" finished-at="2026-04-11T11:46:30 IST" duration-ms="287" status="PASS">
+        </test-method> <!-- testBackNavigationAfterSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GoogleSearchTest@65fb9ffc]" started-at="2026-06-12T23:25:18 IST" name="tearDown" finished-at="2026-06-12T23:25:18 IST" duration-ms="388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

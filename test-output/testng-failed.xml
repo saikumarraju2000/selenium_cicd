@@ -5,9 +5,9 @@
     <classes>
       <class name="tests.GoogleSearchTest">
         <methods>
-          <include name="testSearchReturnsResults"/>
-          <include name="tearDown"/>
+          <include name="testSearchWithValidQuery"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- tests.GoogleSearchTest -->
     </classes>
