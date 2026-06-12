@@ -19,7 +19,7 @@ jobs:
       - name: Install Chrome and dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y google-chrome-stable fonts-liberation libxss1 libappindicator1 libindicator7 xdg-utils libnss3 libgconf-2-4 libxss1 libxtst6 libegl1
+          sudo apt-get install -y google-chrome-stable fonts-liberation libxss1
 
       - name: Run Tests
         run: mvn test
