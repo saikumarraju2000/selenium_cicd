@@ -7,6 +7,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v3
 
@@ -19,7 +20,24 @@ jobs:
       - name: Install Chrome and dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y google-chrome-stable fonts-liberation libxss1
-
+          sudo apt-get install -y \
+            google-chrome-stable \
+            fonts-liberation \
+            libxss1 \
+            xvfb \
+            libappindicator1 \
+            libindicator7
+      
       - name: Run Tests
-        run: mvn test
+        run: |
+          export DISPLAY=:99
+          sudo Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+          mvn test
+      
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-reports
+          path: target/surefire-reports/
+          retention-days: 30
