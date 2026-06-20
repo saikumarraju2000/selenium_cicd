@@ -5,6 +5,8 @@
         <classes>
             <class name="tests.alerts"/>
             <class name="tests.GooglePageObjectTest"/>
+            <class name="tests.links"/>
+            <class name="tests.uploadTest"/>
         </classes>
     </test>
 
