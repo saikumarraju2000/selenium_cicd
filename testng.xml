@@ -3,7 +3,7 @@
 
     <test name="Google Tests">
         <classes>
-            
+            <class name="tests.alerts"/>
             <class name="tests.GooglePageObjectTest"/>
         </classes>
     </test>
