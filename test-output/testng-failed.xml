@@ -5,9 +5,15 @@
     <classes>
       <class name="tests.GoogleSearchTest">
         <methods>
-          <include name="testSearchWithValidQuery"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="testSearchWithNumbers"/>
+          <include name="testSearchWithSpecialCharacters"/>
+          <include name="testSearchWithSingleCharacter"/>
+          <include name="testPageRefreshAfterSearch"/>
+          <include name="testSearchWithLongQuery"/>
+          <include name="testSearchWithDifferentKeyword"/>
+          <include name="testMultipleSearches"/>
         </methods>
       </class> <!-- tests.GoogleSearchTest -->
     </classes>
